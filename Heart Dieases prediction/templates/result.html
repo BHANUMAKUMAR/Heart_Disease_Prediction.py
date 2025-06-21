@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: linear-gradient(135deg, #ff4d4d, #b30000); font-family: Arial, sans-serif; color: #ffffff;">
+    <div style="text-align: center; background-color: rgba(255, 255, 255, 0.1); padding: 40px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); max-width: 400px; width: 100%;">
+        <h2 style="font-size: 24px; font-weight: bold; margin-bottom: 20px; color: #ffffff; text-transform: uppercase; letter-spacing: 1px;">{{ prediction_text }}</h2>
+        <a href="/" style="display: inline-block; padding: 12px 20px; background-color: #ffffff; color: #b30000; text-decoration: none; border-radius: 8px; font-weight: bold; transition: background-color 0.3s, color 0.3s, transform 0.2s; box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);">
+            Go back to the prediction form
+        </a>
+        <script>
+            // Add a subtle animation on hover
+            document.querySelector('a').addEventListener('mouseover', function() {
+                this.style.backgroundColor = '#b30000';
+                this.style.color = '#ffffff';
+                this.style.transform = 'scale(1.05)';
+                this.style.boxShadow = '0 8px 15px rgba(179, 0, 0, 0.3)';
+            });
+            document.querySelector('a').addEventListener('mouseout', function() {
+                this.style.backgroundColor = '#ffffff';
+                this.style.color = '#b30000';
+                this.style.transform = 'scale(1)';
+                this.style.boxShadow = '0 5px 10px rgba(255, 255, 255, 0.2)';
+            });
+        </script>
+    </div>
+</body>
+</html>
